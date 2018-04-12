@@ -45,7 +45,7 @@ function RTMatrix = ReadXL2RTData(fno_start, f1, f2, no_of_positions, verbose)
                              % text file names may not be consecutive 
                              % numbers
 
-    for pos=1:18    % Changes every time a new file is loaded (a.i. new position)
+    for pos=1:no_of_position    % Changes every time a new file is loaded (a.i. new position)
         if filenumber<10
             fmid = strcat('00',num2str(filenumber));
         elseif filenumber<100
