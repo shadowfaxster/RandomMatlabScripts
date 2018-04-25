@@ -114,6 +114,11 @@ function RTMatrix = ReadXL2RTData(fno_start, f1, f2, no_of_positions, verbose)
                 end
             end
         end
+        fclose(fileID);
+        
+        if (verbose)
+        	display("Successfully closed file")
+        end
     end
     
     RTMatrix = dataPoints;
